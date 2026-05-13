@@ -8,10 +8,10 @@ class PairwiseDistanceCalculator:
         self.vectors_2 = vectors_2
 
         # 4. óra
-        self.__n_1 = 0 # láthatósági szint, public: vectors_1, private: __n_1
+        self.__n_1 = 0  # láthatósági szint, public: vectors_1, private: __n_1
         self.__n_2 = 0
 
-    @property # dekorátor, az n_1 meghívásakor nem kell ()
+    @property  # dekorátor, az n_1 meghívásakor nem kell ()
     def n_1(self) -> int:
         self.__n_1 = len(self.vectors_1)
         return self.__n_1

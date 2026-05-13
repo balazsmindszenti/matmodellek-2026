@@ -17,8 +17,6 @@ class GoogleDataDownloader:
             # google drive megosztási link, ha link birtokában bárki
             # megtekintheti, akkor működik
             gdown.download(url=file_url,
-                           output=str(self.file_path),
-                           # fuzzy miatt nem veszi figyelembe azt a részt, ami
-                           # applikáció miatt specifikus, pl. itt a /view rész
-                           fuzzy=True)
+                           output=str(self.file_path))
+                           # fuzzy itt nem működik, nem kell ebben a gdown csomagban
 # üres sor a fájl végén: konvenció
